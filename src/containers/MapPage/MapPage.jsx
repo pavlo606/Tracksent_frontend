@@ -41,7 +41,7 @@ const MapPage = () => {
     const [currentDate, setCurrentDate] = useState(getDefaultDate());
 
     useEffect(() => {
-        const apiUrl = 'http://pavlodykyi.pythonanywhere.com/vehicle';
+        const apiUrl = 'https://pavlodykyi.pythonanywhere.com/vehicle';
         axios.get(apiUrl)
         .then((resp) => {
             const data = resp.data;
@@ -52,7 +52,7 @@ const MapPage = () => {
     }, [])
 
     useEffect(() => {
-        const apiUrl = 'http://pavlodykyi.pythonanywhere.com/coord';
+        const apiUrl = 'https://pavlodykyi.pythonanywhere.com/coord';
         const data = {
             field_id: fieldId,
             vehicle_id: selectedTractor,

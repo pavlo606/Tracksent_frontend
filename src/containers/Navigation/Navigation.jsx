@@ -13,7 +13,7 @@ const Navigation = () => {
     const [fields, setFields] = useState([]);
 
     useEffect(() => {
-        const apiUrl = 'http://pavlodykyi.pythonanywhere.com/field';
+        const apiUrl = 'https://pavlodykyi.pythonanywhere.com/field';
         axios.get(apiUrl, {
             params: {
 
