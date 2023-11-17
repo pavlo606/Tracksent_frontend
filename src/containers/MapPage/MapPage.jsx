@@ -37,7 +37,7 @@ const MapPage = () => {
 
     const [currentCoords, setCurrentCoords] = useState([]);
     const [tractorOptions, setTractorOptions] = useState([]);
-    const [selectedTractor, setSelectedTractor] = useState(0);
+    const [selectedTractor, setSelectedTractor] = useState(1);
     const [currentDate, setCurrentDate] = useState(getDefaultDate());
 
     useEffect(() => {
